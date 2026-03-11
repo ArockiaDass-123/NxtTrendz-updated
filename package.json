@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "engines": {
-    "node": "16.x",
-    "npm": ">=6"
+    "node": "20.x",
+    "npm": ">=8"
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.11.9",
@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider CI=false react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
